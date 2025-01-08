@@ -1,0 +1,123 @@
+body {
+    background-image: url("assests/images/sky.jpg");
+    /* background-color: #326765; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #EDDEA4; */
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:slateblue;
+    border-radius: 10px;
+    width: 50vw;
+    height: 80vh;
+    margin-top: 53px;
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color:white;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .timer, .errors, .accuracy, .cpm, .wpm {
+    background-color: rgb(159, 245, 193);
+    height: 60px;
+    width: 70px;
+    margin: 8px;
+    padding: 12px;
+    border-radius: 20%;
+    box-shadow: black 5px 8px 5px;
+  }
+  
+  .cpm, .wpm  {
+    display: none;
+  }
+  
+  .header_text {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+  
+  .curr_time, .curr_errors, .curr_accuracy, .curr_cpm, .curr_wpm {
+    font-size: 2.75rem;
+  }
+  
+  .quote {
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: black 5px 8px 5px;
+  }
+  
+  .input_area {
+    background-color: rgb(159, 245, 193);
+    height: 80px;
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 15px;
+    padding: 20px;
+    border: 0px;
+    box-shadow: black 5px 8px 5px;
+  }
+  
+  .restart_btn {
+    display: none;
+    background-color: #326765;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 0px;
+    box-shadow: black 5px 8px 5px;
+    color: white;
+  }
+  
+  .restart_btn:hover {
+    background-color: #264f4e;
+    cursor: pointer;
+  }
+  
+  .incorrect_char {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  .correct_char {
+    color: darkgreen;
+  }
+  
+  @media (max-width: 600px) {
+    .input_area {
+      width: 80%;
+    }
+    .container {
+      padding: 10px;
+    }
+    .header {
+      flex-direction: column;
+    }
+  }
+  
+  
+  
